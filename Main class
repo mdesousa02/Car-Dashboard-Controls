@@ -1,0 +1,19 @@
+public class Main {
+
+    public static void main(String[] args) {
+        //Setting a new door
+        Door dd = new Door();
+        dd.name = "Driver";
+        //this command opens the door
+        dd.open();
+        dd.printStatus();
+        //This is adding a new door pd stands for Passenger door
+        Door pd = new Door();
+        pd.name = "Passenger";
+        pd.printStatus();
+        pd.open();
+        pd.printStatus();
+        dd.close();
+        dd.printStatus();
+    }
+}
