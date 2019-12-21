@@ -1,0 +1,24 @@
+public class Door {
+    //This is so we can have different doors
+    String name;
+    //Declaring a boolean variable so we can have true and false variables
+    boolean isOpen;
+    //This method is saying if I type open it is true and that the door is open
+    void open() {
+        isOpen = true;
+    }
+    //This method is saying if I type close it is false and that the door is closed
+    void close() {
+        isOpen = false;
+    }
+    //This is to tell us which door is open
+    void printStatus() {
+        if (isOpen) {
+           System.out.println(name + "Door is open");
+        }
+        //This is too tell us which door has been closed
+        else {
+            System.out.println(name + "Door is closed");
+        }
+    }
+}
